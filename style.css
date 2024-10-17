@@ -35,11 +35,40 @@ img:hover {
 }
 
 .fixed{
-    position: fixed;
+  position: fixed;
   bottom: 0;
   right: 0;
   height: 30px;
   width: 100px;
   border: 3px solid #73AD21;
   background-color: aqua;
+}
+
+#scroll{
+  overflow: scroll;
+}
+
+
+#moving_box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+body {
+  background-image: url('https://wallpapers.com/images/featured/cool-white-background-ingbh7qw7if21dkn.jpg'); /* Specify the image path */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover;       /* Scales the image to cover the entire area */
+  background-position: center;  /* Positions the image at the center */
 }
